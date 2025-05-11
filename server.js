@@ -2,7 +2,6 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const fs = require('fs');
-const serverless = require('serverless-http');
 
 const app = express();
 const server = http.createServer(app);
@@ -174,9 +173,5 @@ function shuffle(a) {
 	return a;
 }
 
-if (process.env.NETLIFY) {
-	module.exports.handler = serverless(app);
-} else {
-	const PORT = process.env.PORT || 3000;
-	server.listen(PORT, () => console.log(`Server läuft auf Port ${PORT}`));
-}
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`Server läuft auf Port ${PORT}`));
