@@ -1,11 +1,337 @@
 [
-  { "type": "estimate", "question": "Wie hoch ist der Eiffelturm (in Metern)?", "answer": "300" },
-  { "type": "mc", "question": "Welche Farbe hat der Himmel?", "options": ["Blau","Grün","Rot","Gelb"], "answer": "Blau" },
-  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb1.jpg", "answer": "Albert Einstein" },
-  { "type": "estimate", "question": "Wie viele Planeten hat unser Sonnensystem?", "answer": "8" },
-  { "type": "mc", "question": "Welches ist das größte Land der Welt?", "options": ["Kanada", "China", "Russland", "USA"], "answer": "Russland" },
-  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb2.jpg", "answer": "Marie Curie" },
-  { "type": "estimate", "question": "Wie viele Minuten hat eine Stunde?", "answer": "60" },
-  { "type": "mc", "question": "Welches Tier ist bekannt für seinen langen Hals?", "options": ["Elefant", "Giraffe", "Löwe", "Tiger"], "answer": "Giraffe" },
-  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb3.jpg", "answer": "Leonardo da Vinci" }
+	{
+		"type": "estimate",
+		"question": "Wie viele Kilometer beträgt die Länge der Donau?",
+		"answer": "2857"
+	},
+	{
+		"type": "estimate",
+		"question": "In welchem Jahr wurde die erste E-Mail versendet?",
+		"answer": "1971"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Nullen hat eine Billiarde im Deutschen Zahlensystem?",
+		"answer": "15"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Meter tief ist der Marianengraben an seiner tiefsten Stelle?",
+		"answer": "11034"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Knochen hat der menschliche Körper im Erwachsenenalter?",
+		"answer": "206"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Einwohner hatte Berlin im Jahr 2023 ungefähr?",
+		"answer": "3760000"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Tasten hat ein Standard-Klavier?",
+		"answer": "88"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Sprachen werden weltweit gesprochen (gerundet)?",
+		"answer": "7000"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Kilometer ist der Äquator lang?",
+		"answer": "40075"
+	},
+	{
+		"type": "estimate",
+		"question": "Wie viele Tage dauerte der Dreißigjährige Krieg?",
+		"answer": "10958"
+	},
+
+	{
+		"type": "mc",
+		"question": "Welches Element hat die Ordnungszahl 79?",
+		"options": ["Gold", "Silber", "Platin", "Kupfer"],
+		"answer": "Gold"
+	},
+	{
+		"type": "mc",
+		"question": "Welcher Planet ist der heißeste im Sonnensystem?",
+		"options": ["Merkur", "Venus", "Mars", "Jupiter"],
+		"answer": "Venus"
+	},
+	{
+		"type": "mc",
+		"question": "Welcher Philosoph schrieb 'Kritik der reinen Vernunft'?",
+		"options": ["Kant", "Hegel", "Nietzsche", "Descartes"],
+		"answer": "Kant"
+	},
+	{
+		"type": "mc",
+		"question": "In welcher Stadt steht die Alhambra?",
+		"options": ["Barcelona", "Madrid", "Granada", "Sevilla"],
+		"answer": "Granada"
+	},
+	{
+		"type": "mc",
+		"question": "Wer komponierte die Oper 'Die Zauberflöte'?",
+		"options": ["Beethoven", "Mozart", "Haydn", "Wagner"],
+		"answer": "Mozart"
+	},
+	{
+		"type": "mc",
+		"question": "Welches Vitamin wird hauptsächlich durch Sonnenlicht gebildet?",
+		"options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+		"answer": "Vitamin D"
+	},
+	{
+		"type": "mc",
+		"question": "Welches Land war früher als Persien bekannt?",
+		"options": ["Jordanien", "Türkei", "Iran", "Irak"],
+		"answer": "Iran"
+	},
+	{
+		"type": "mc",
+		"question": "Wie viele Bundesländer hat Deutschland?",
+		"options": ["14", "15", "16", "17"],
+		"answer": "16"
+	},
+	{
+		"type": "mc",
+		"question": "Welcher Fluss fließt durch Budapest?",
+		"options": ["Donau", "Elbe", "Rhein", "Themse"],
+		"answer": "Donau"
+	},
+	{
+		"type": "mc",
+		"question": "Was ist die Hauptstadt von Kanada?",
+		"options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+		"answer": "Ottawa"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/800px-Albert_Einstein_Head.jpg",
+		"answer": "Albert Einstein"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Marie_Curie_c1920.jpg/800px-Marie_Curie_c1920.jpg",
+		"answer": "Marie Curie"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/800px-N.Tesla.JPG",
+		"answer": "Nikola Tesla"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Martin_Luther_King_Jr._NYWTS.jpg/800px-Martin_Luther_King_Jr._NYWTS.jpg",
+		"answer": "Martin Luther King Jr."
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/800px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+		"answer": "Frida Kahlo"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Simone_de_Beauvoir2.jpg/800px-Simone_de_Beauvoir2.jpg",
+		"answer": "Simone de Beauvoir"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/800px-President_Barack_Obama.jpg",
+		"answer": "Barack Obama"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Margaret_Thatcher.png/800px-Margaret_Thatcher.png",
+		"answer": "Margaret Thatcher"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Yousuf_Karsh_-_Winston_Churchill.jpg/800px-Yousuf_Karsh_-_Winston_Churchill.jpg",
+		"answer": "Winston Churchill"
+	},
+	{
+		"type": "celeb",
+		"question": "Wer ist auf diesem Bild?",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Niels_Bohr.jpg/800px-Niels_Bohr.jpg",
+		"answer": "Niels Bohr"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/3f9zqUnrnIq0LANhmnaF0V",
+		"answer": "Cyndi Lauper - Money Changes Everything"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/7oK9VyNzrYvRFo7nQEYkWN",
+		"answer": "The Killers - Mr. Brightside"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/0cqRj7pUJDkTCEsJkx8snD",
+		"answer": "Taylor Swift - Shake it Off"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg",
+		"answer": "Coldplay - Yellow"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
+		"answer": "The Police - Every Breath You Take"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/0TK2YIli7K1leLovkQiNik",
+		"answer": "Shawn Mendes - Señorita"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/2RlgNHKcydI9sayD2Df2xp",
+		"answer": "Electric Light Orchestra - Mr. Blue Sky"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/3KkXRkHbMCARz0aVfEt68P",
+		"answer": "Post Malone - Sunflower"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC",
+		"answer": "Rick Astley - Never Gonna Give You Up"
+	},
+	{
+		"type": "music",
+		"question": "Was ist der Titel dieses Songs?",
+		"url": "https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb",
+		"answer": "Luis Fonsi - Despacito"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Der einzige Weg, großartige Arbeit zu leisten, ist zu lieben, was man tut.",
+		"answer": "Steve Jobs"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Ich denke, also bin ich.",
+		"answer": "René Descartes"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt.",
+		"answer": "Albert Einstein"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Es ist nicht wichtig, wie langsam du gehst, solange du nicht stehen bleibst.",
+		"answer": "Konfuzius"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Der Mutige lebt vielleicht nicht ewig, aber der Vorsichtige lebt überhaupt nicht.",
+		"answer": "Richard Branson"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Die einzige Grenze zu unserer Verwirklichung von morgen werden unsere Zweifel von heute sein.",
+		"answer": "Franklin D. Roosevelt"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Glück ist das einzige, was sich verdoppelt, wenn man es teilt.",
+		"answer": "Albert Schweitzer"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren.",
+		"answer": "Bertolt Brecht"
+	},
+	{
+		"type": "quote",
+		"question": "Von wem stammt dieses Zitat?",
+		"quote": "Die Zukunft gehört denen, die an die Wahrhaftigkeit ihrer Träume glauben.",
+		"answer": "Eleanor Roosevelt"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Handschuhfach"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Taschenlampe"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Zahnarztpraxis"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Fußballschuh"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Wasserkocher"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Kühlschrank"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Schreibtischlampe"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Flugzeugträger"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Geschirrspüler"
+	},
+	{
+		"type": "lettersalad",
+		"question": "Welches Wort versteckt sich hier?",
+		"answer": "Taschenrechner"
+	}
 ]

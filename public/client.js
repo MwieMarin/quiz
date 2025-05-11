@@ -93,7 +93,11 @@ socket.on('newQuestion', q => {
 	displayQuestion(q);
 });
 
-socket.on('showAnswer', ans => console.log('Korrekte Antwort:', ans));
+socket.on('showAnswer', ans => {
+	console.log('Korrekte Antwort:', ans);
+	const area = document.getElementById('question-area');
+	area.innerHTML += `<p>Richtige Antwort: ${ans}</p>`;
+});
 
 socket.on('buzzList', list => {
 	if (isHost) {
@@ -115,10 +119,17 @@ socket.on('updateScores', users => {
 });
 
 socket.on('hostReconnected', () => {
-  isHost = true; // Restore host status
-  btnStart.hidden = false; // Show the start button
-  leaderboard.hidden = false; // Show the leaderboard
-  buzzArea.hidden = false; // Show the buzz area
+  isHost = true;
+  btnStart.hidden = false;
+  leaderboard.hidden = false;
+  buzzArea.hidden = false;
+});
+
+socket.on('pauseSpotifyEmbed', () => {
+	const iframe = document.querySelector('iframe[src*="open.spotify.com/embed/track"]');
+	if (iframe) {
+		iframe.contentWindow.postMessage({ command: 'pause' }, '*');
+	}
 });
 
 function markAnswer(userId, correct) {
@@ -128,12 +139,38 @@ function markAnswer(userId, correct) {
 // Frage anzeigen
 function displayQuestion(q) {
 	const area = document.getElementById('question-area');
-	let html = `<h3>${q.question}</h3>`;
-	if (q.type === 'mc' && isHost) {
-		html += q.options.map(o => `<button class="opt">${o}</button>`).join('');
+	let html = `<h2>${q.question}</h2>`;
+	
+	switch (q.type) {
+		case 'mc':
+			if (isHost) {
+				html += `<ul>Antwortmöglichkeiten:<ul>`;
+				html += q.options.map(o => `<li>${o}</li>`).join('');
+				html += `</ul>`;
+			}
+			break;
+		case 'estimate':
+			html += `<p>Schätzfrage!</p>`;
+			break;
+		case 'celeb':
+			html += `<img src="${q.image}">`;
+			break;
+		case 'music':
+			if (isHost) {
+				const songId = q.url.split('/track/')[1];
+				html += `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${songId}" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+			}
+			break;
+		case 'quote':
+			html += `<blockquote>${q.quote}</blockquote>`;
+			break;
+		case 'lettersalad':
+			html += `<h2>${q.lettersalad}</h2>`;
+			break;
+		default:
+			html += `<p>Unbekannter Fragetyp!</p>`;
+			break;
 	}
-	if (q.type === 'estimate') html += `<p>Schätzfrage!</p>`;
-	if (q.type === 'celeb') html += `<img src="${q.image}" alt="Promi-Bild" style="max-width:100%">`;
 	area.innerHTML = html;
 }
 

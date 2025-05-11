@@ -98,6 +98,8 @@ io.on('connection', socket => {
 				const u = lobby.users.find(x => x.id === id);
 				return { id, name: u.name };
 			}));
+			
+			io.to(lobby.host).emit('pauseSpotifyEmbed');
 		}
 	});
 
@@ -158,11 +160,15 @@ io.on('connection', socket => {
 		}
 		const q = lobby.questions[lobby.currentIndex++];
 		lobby.waiting = [];
+		if(q.type == 'lettersalad'){
+			q.lettersalad = q.answer.split('').sort(() => Math.random() - 0.5).join('');
+		}
 		io.in(code).emit('newQuestion', q);
 		io.to(lobby.host).emit('showAnswer', q.answer);
 		io.to(lobby.host).emit('updateScores', lobby.users);
 	}
 });
+
 
 // Utility: mischen
 function shuffle(a) {
