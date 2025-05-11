@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <input id="username" placeholder="Name">
+    <input id="code" placeholder="Lobbycode (zum Beitreten)">
+    <button id="join">Beitreten</button>
+    <button id="create">Lobby erstellen</button>
+    <p id="error" class="error"></p>
+  </div>
+  <div id="lobby" hidden>
+    <h2>Lobby <span id="lobby-code"></span></h2>
+    <ul id="users"></ul>
+    <button id="start">Start</button>
+  </div>
+  <div id="quiz" hidden>
+    <div id="question-area"></div>
+    <button id="buzz">Ich weiß die Antwort!</button>
+    <div id="buzz-area" hidden></div>
+    <ul id="leaderboard" hidden></ul>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+  { "type": "estimate", "question": "Wie hoch ist der Eiffelturm (in Metern)?", "answer": "300" },
+  { "type": "mc", "question": "Welche Farbe hat der Himmel?", "options": ["Blau","Grün","Rot","Gelb"], "answer": "Blau" },
+  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb1.jpg", "answer": "Albert Einstein" },
+  { "type": "estimate", "question": "Wie viele Planeten hat unser Sonnensystem?", "answer": "8" },
+  { "type": "mc", "question": "Welches ist das größte Land der Welt?", "options": ["Kanada", "China", "Russland", "USA"], "answer": "Russland" },
+  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb2.jpg", "answer": "Marie Curie" },
+  { "type": "estimate", "question": "Wie viele Minuten hat eine Stunde?", "answer": "60" },
+  { "type": "mc", "question": "Welches Tier ist bekannt für seinen langen Hals?", "options": ["Elefant", "Giraffe", "Löwe", "Tiger"], "answer": "Giraffe" },
+  { "type": "celeb", "question": "Wer ist auf diesem Bild?", "image": "https://example.com/celeb3.jpg", "answer": "Leonardo da Vinci" }
+]

@@ -1,0 +1,15 @@
+body { font-family: sans-serif; padding: 20px; }
+.error { color: red; }
+#login, #lobby, #quiz { max-width: 400px; margin: auto; }
+button { margin: 5px; padding: 10px; }
+#buzz-area, #leaderboard {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+#buzz-area div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
